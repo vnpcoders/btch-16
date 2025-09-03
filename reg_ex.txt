@@ -1,0 +1,170 @@
+Python RegEx Assignment Question
+
+Question 1: Extract all email addresses from a given text.
+Test String: "Contact us at info@example.com or support@company.org for
+assistance."
+
+Question 2: Find all valid URLs (http or https) in a string.
+Test String: "Visit https://www.python.org or http://example.com for more
+info."
+
+Question 3: Problem: Extract all hashtags (words starting with #) from a tweet.
+Test String: "This is a #great day for #learning Python regex!"
+
+Question 4: Problem: Find all four-digit years in a string. Test String: "The years 1999,
+2005, and 2023 were significant."
+
+Question 5: Problem: Extract all phone numbers in the format (XXX) XXX-XXXX. Test String:
+"Call us at (123) 456-7890 or (987) 654-3210."
+
+Question 6: Problem: Validate if a string is a valid IPv4 address. Test String 1:
+"192.168.1.1" Test String 2: "256.0.0.1"
+
+Question 7: Problem: Replace all occurrences of "Python" (case-insensitive) with "Java". Test
+String: "Python is fun. python is powerful. PYTHON is versatile."
+
+Atul Sir
+Question 8: Problem: Remove all leading and trailing whitespace from a string. Test String: "
+Hello World "
+
+Question 9: Problem: Replace multiple spaces with a single space. Test String: "This has
+too many spaces."
+
+Question 10: Problem: Capitalize the first letter of each word in a sentence. Test String:
+"hello world, how are you?"
+
+Question 11: Problem: Extract the username and domain from an email address. Test String:
+"user.name@example.co.uk"
+
+Question 12: Problem: Find all words that start with "pre" and end with "tion". Test String:
+"Precaution and presentation are important for preparation."
+
+Question 13: Problem: Extract all numbers that are immediately followed by "kg". Test String:
+"The package weighs 10kg and another 5.5kg."
+
+Question 14: Problem: Find all occurrences of words that have at least one digit in them. Test
+String: "Item A1, B23, and C are available. D4 is out of stock."
+
+Question 15: Problem: Extract content enclosed in double quotes. Test String: He said
+"Hello World" and then "Goodbye."
+
+Question 16: Problem: Find words that do not contain any vowels (a, e, i, o, u). Test String:
+"Rhythm and sky are unique words."
+
+Atul Sir
+Question 17: Problem: Extract all numbers that are NOT preceded by a dollar sign. Test
+String: "Price is $100. The quantity is 50. Discount is $20."
+
+Question 18: Problem: Find words that are exactly 5 characters long. Test String: "Apple,
+Banana, Grape, Cherry, Mango"
+
+Question 19: Problem: Replace all occurrences of "color" with "colour", but only if "color" is a
+whole word. Test String: "The color is red. This coloring book has many
+colors."
+
+Question 20: Problem: Extract text between <start> and <end> tags. Test String: "This
+is <start>important data</end> and this is <start>more data</end>."
+
+Question 21: Problem: Find all words that contain at least three consecutive identical
+characters. Test String: "Bookkeeper, Mississippi, Yellow, Pudding, Success"
+
+Question 22: Problem: Extract all numbers that are between 1 and 100 (inclusive). Test
+String: "Numbers are 5, 105, 99, 0, 750, and 20."
+
+Question 23: Problem: Find all words that have exactly two vowels. Test String:
+"Beautiful, apple, tree, sky, rhythm, fantastic"
+
+Question 24: Problem: Validate if a string represents a time in 24-hour format (HH:MM). Test
+String 1: "14:30" Test String 2: "25:00"
+
+Question 25: Problem: Extract all hexadecimal color codes (e.g., #RRGGBB or #RGB). Test
+String: "Colors include #FF0000, #00F, and #AABBCC."
+
+Atul Sir
+Question 26: Problem: Find all words that start and end with the same letter. Test String:
+"Level, Madam, Racecar, Noon, Hello, World"
+
+Question 27: Problem: Extract all dates in DD/MM/YYYY format. Test String: "Today is
+05/07/2025. Another date is 12/01/2024."
+
+Question 28: Problem: Replace all non-alphanumeric characters with an underscore. Test
+String: "Hello, World! This is a test. 123@abc."
+
+Question 29: Problem: Find all words that are palindromes (case-insensitive). Test String:
+"Madam, level, racecar, noon, refer, hello"
+
+Question 30: Problem: Extract the full name from a string in "Lastname, Firstname" format.
+Test String: "Doe, John and Smith, Jane were present."
+
+Question 31: Problem: Extract all numbers that are followed by " USD". Test String: "The
+cost is 500 USD. The item is 123 EUR."
+
+Question 32: Problem: Find words that are preceded by "The ". Test String: "The quick
+brown fox jumps over the lazy dog."
+
+Question 33: Problem: Replace any sequence of three or more consecutive identical
+characters with a single instance of that character. Test String: "Heeelloo Wooorld!
+Miiississippi"
+
+Question 34: Problem: Extract content inside parentheses, but only if they are not empty. Test
+String: "Some text (content here) and (more) but also () empty ones."
+
+Atul Sir
+Question 35: Problem: Find all words that contain "ing" but not at the beginning or end of the
+word. Test String: "Singing, bring, running, amazing, thing, going"
+
+Question 36: Problem: Swap the first and last names in a "Firstname Lastname" string. Test
+String: "John Doe"
+
+Question 37: Problem: Find duplicate words in a sentence (case-insensitive). Test String:
+"The quick brown fox, the quick brown dog."
+
+Question 38: Problem: Extract all HTML tags (e.g., <div>, <span>, <p>). Test String:
+"<html><body><div><p>Hello</p></div></body></html>"
+
+Question 39: Problem: Remove all comments from a Python code string (single-line # and
+multi-line """docstrings"""). Test String:
+Python
+def my_function():
+# This is a single-line comment
+\"\"\"This is a
+multi-line docstring.\"\"\"
+print("Hello") # Another comment
+
+Question 40: Problem: Extract all numbers that are part of a price (e.g., "$10.50", "25 Euro").
+Test String: "The price is $10.50. It costs 25 Euro. Free for 0.00."
+
+Question 41: Problem: Split a string by any non-alphanumeric character. Test String:
+"Hello, World! This_is_a-test.123"
+
+Question 42: Problem: Iterate over all matches of a pattern and print their start and end
+positions. Test String: "Apple, Banana, Apple, Cherry"
+
+Atul Sir
+Question 43: Problem: Split a string by sentences, assuming sentences end with '.', '!', or '?'.
+Test String: "Hello world! How are you? I am fine."
+
+Question 44: Problem: Extract all words that are exactly two characters long. Test String: "It
+is a beautiful day. Do go out."
+
+Question 45: Problem: Replace all vowels with an asterisk. Test String: "Programming is
+fun and challenging."
+
+Question 46: Problem: Validate if a password meets the following criteria: at least 8 characters
+long, contains at least one uppercase letter, one lowercase letter, one digit, and one special
+character. Test String 1: "Password123!" Test String 2: "pass123"
+
+Question 47: Problem: Extract all hexadecimal numbers (starting with 0x or 0X). Test String:
+"The values are 0xABC, 0X123, and 1234."
+
+Question 48: Problem: Find and extract all "key=value" pairs from a configuration string. Test
+String: "name=John, age=30, city=New York, status=active"
+
+Question 49: Problem: Remove all HTML tags from a string, leaving only the plain text. Test
+String: "<html><body><h1>Hello</h1><p>World</p></body></html>"
+
+Question 50: Problem: Validate if a string is a valid file path (simple validation: ends with an
+extension like .txt, .pdf, .jpg). Test String 1: "document.pdf" Test String 2: "image.jpg"
+Test String 3: "folder/file"
+
+Atul
