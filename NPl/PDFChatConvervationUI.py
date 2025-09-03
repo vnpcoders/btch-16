@@ -24,7 +24,7 @@ except RuntimeError:
     asyncio.set_event_loop(asyncio.new_event_loop())
 
 # PDF Loader
-loader = PyPDFLoader('D:\btch 16\NPl\my_paper.pdf')
+loader = PyPDFLoader(r'D:\btch 16\NPl\my_paper.pdf')
 data = loader.load()
 
 # Text Splitting
