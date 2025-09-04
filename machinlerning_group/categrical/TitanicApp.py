@@ -9,7 +9,7 @@ with open(r"D:\btch 16\machinlerning_group\categrical\log_model.pkl","rb")as f:
 with open(r"D:\btch 16\machinlerning_group\categrical\sex_encoder.pkl","rb") as f:
     sex_enc= pickle.load(f)
 
-with open("D:\btch 16\machinlerning_group\categrical\emb_encoder.pkl","rb") as f:
+with open(r"D:\btch 16\machinlerning_group\categrical\emb_encoder.pkl","rb") as f:
     emb_enc= pickle.load(f)
 
 st.title("Titanic Survival Prediction App")
