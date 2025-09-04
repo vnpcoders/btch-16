@@ -2,7 +2,7 @@ import google.generativeai as genai
 from newspaper import Article
 
 # Gemini API setup
-genai.configure(api_key=" Enter your API")
+genai.configure(api_key=" Enter your API Key")
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 def scrape_website_content(url):
