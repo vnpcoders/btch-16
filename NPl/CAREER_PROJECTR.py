@@ -8,7 +8,7 @@ st.title("🎓 AI Career Path Advisor")
 st.write("Fill in your preferences and get a personalized career roadmap!")
 
 #API Configuration
-genai.configure(api_key="Enter your API kEy")
+genai.configure(api_key="Enter your API key")
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 def career_advice(tech, career, course, timeperiod):
