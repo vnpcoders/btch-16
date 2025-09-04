@@ -2,4 +2,4 @@ numpy
 streamlit
 seaborn
 matplotlib
-sci
+scikit-larn
