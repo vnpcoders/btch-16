@@ -3,7 +3,7 @@ import numpy as np
 import pickle
 
 
-with open("log_model.pkl","rb")as f:
+with open("","rb")as f:
     model= pickle.load(f)
 
 with open("sex_encoder.pkl","rb") as f:
