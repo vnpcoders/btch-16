@@ -6,7 +6,7 @@ import pickle
 with open(r"D:\btch 16\machinlerning_group\categrical\log_model.pkl","rb")as f:
     model= pickle.load(f)
 
-with open("","rb") as f:
+with open("D:\btch 16\machinlerning_group\categrical\sex_encoder.pkl","rb") as f:
     sex_enc= pickle.load(f)
 
 with open("emb_encoder.pkl","rb") as f:
