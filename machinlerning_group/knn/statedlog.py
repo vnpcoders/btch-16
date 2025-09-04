@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 
 # 🎯 Load model and encoders
-model = pickle.load(open('ss_poly_model.pkl', 'rb'))
+model = pickle.load(open('ss_poly_Model.pkl', 'rb'))
 status_encoder = pickle.load(open('Attribute1.pkl', 'rb'))
 credit_history_encoder = pickle.load(open('Attribute3.pkl', 'rb'))
 purpose_encoder = pickle.load(open('Attribute4.pkl', 'rb'))
