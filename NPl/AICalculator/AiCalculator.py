@@ -1,2 +1,2 @@
 import streamlit as st
-from langchain_google_genai import ChatGoogleGen
+from langchain_google_genai import ChatGoogleGenerative
