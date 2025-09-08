@@ -55,5 +55,5 @@ verbose=False,
 handle_parsing_errors=True)
 
 if "messeges" not in st.session_state:
-    st.session_state['messeges']
+    st.session_state['messages']
 
