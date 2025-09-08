@@ -32,5 +32,5 @@ calculator=Tool(
 
 prompt="""
                   you are my personel agent task with solving users mathamatical questions
-Question=st.t
+Question=st.text
 """
