@@ -54,4 +54,6 @@ agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
 verbose=False,
 handle_parsing_errors=True)
 
+if "messeges" not in st.session_state:
+    st.session_state
 
