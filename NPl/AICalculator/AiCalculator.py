@@ -39,4 +39,4 @@ question=st.text_input("Enter your problem here")
 prompt_template=PromptTemplate(input_variables=['question'],template=prompt)
 chain=LLMChain(llm=llm,prompt=prompt_template)
 
-
+reaso
