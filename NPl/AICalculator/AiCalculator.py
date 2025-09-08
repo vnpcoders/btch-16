@@ -35,4 +35,4 @@ prompt="""
 Question=st.text_input("question")
 Answer:
 """
-question=st.text_input("Enter your ")
+question=st.text_input("Enter your pr")
