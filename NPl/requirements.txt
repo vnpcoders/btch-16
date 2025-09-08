@@ -35,9 +35,5 @@ langchain-core
 newspaper3k
 requests
 lxml_html_clean
-<<<<<<< HEAD
-sqllit
-=======
 pysqlite3-binary==0.5.1 
 
->>>>>>> d486faeaf80cad4323fa97818dd50ec111250ea3
