@@ -42,5 +42,5 @@ chain=LLMChain(llm=llm,prompt=prompt_template)
 reasoning_tool=Tool(
     name="Resoning Tool",
     func= chain.run,
-    description="A tool for answering logic-b"
+    description="A tool for answering logic-based"
 )
