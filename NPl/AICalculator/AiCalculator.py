@@ -19,4 +19,4 @@ llm= ChatGoogleGenerativeAI(model="gemini-2.5-flash",
                             google_api_key=gemini_api_key)
 
 wikipedia_wrapper=wikipediaAPIWrapper()
-wikipedia_Tool=Tool(name="Wikipedia",func=wikipedia_wrapper,description="A")
+wikipedia_Tool=Tool(name="Wikipedia",func=wikipedia_wrapper,description="At")
