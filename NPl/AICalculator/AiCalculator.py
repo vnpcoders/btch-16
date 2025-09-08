@@ -18,4 +18,4 @@ if  not gemini_api_key:
 llm= ChatGoogleGenerativeAI(model="gemini-2.5-flash",
                             google_api_key=gemini_api_key)
 
-wikpi
+wikpe
