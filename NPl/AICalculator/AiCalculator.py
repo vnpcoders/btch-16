@@ -48,6 +48,6 @@ reasoning_tool=Tool(
 )
 
 assistant_agent=initialize_agent
-tools=[]
+tools=[wikipedia_Tool]
 
 
