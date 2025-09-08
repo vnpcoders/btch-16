@@ -55,5 +55,17 @@ verbose=False,
 handle_parsing_errors=True)
 
 if "messages" not in st.session_state:
-    st.session_state['messages']
+    st.session_state['messages']={
+        'role':'assistant',
+        'content':"Hi,I am a math chatbot powerd by gemini"
+    }
+for msg in st.session_state.messages:
+    st.chat_message(msg['role']).write(msg['content'])
+
+if st.button("Find answer"):
+    if question:
+        with st.spinner("Generation respones..."):
+            st.session_state.messages.appned
+            ({'role':'assistant','content':response})
+
 
