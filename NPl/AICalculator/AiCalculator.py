@@ -20,7 +20,7 @@ llm= ChatGoogleGenerativeAI(model="gemini-2.5-flash",
                             google_api_key=gemini_api_key)
 
 wikipedia_wrapper=WikipediaAPIWrapper()
-wikipedia_Tool=Tool(name="Wikipedia",func=wikipedia_wrapper,description="A tool for searching the Internet to find information on various object")
+wikipedia_Tool=Tool(name="Wikipedia",func=wikipedia_wrapper.run,description="A tool for searching the Internet to find information on various object")
 
 #math tool
 
