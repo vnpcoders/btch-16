@@ -71,6 +71,6 @@ if st.button("Find answer"):
 
             st_cb=StdOutCallbackHandler(st.container()
                                         ,expand_new_thoughts=False)
-            response=assistant_agent.run(st.session_state.messages,co)
+            response=assistant_agent.run(st.session_state.messages,collb)
 
 
