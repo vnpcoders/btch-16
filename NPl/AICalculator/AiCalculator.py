@@ -11,3 +11,4 @@ st.title("Text to Math problem Solver using Gemini")
 
 #Gemini ApI Key
 gemini_api_key= st.sidebar.text_input(Label="")
+
