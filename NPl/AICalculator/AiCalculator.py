@@ -31,5 +31,5 @@ calculator=Tool(
 )
 
 prompt="""
-you are my personel agent 
+you are my personel agent task 
 """
