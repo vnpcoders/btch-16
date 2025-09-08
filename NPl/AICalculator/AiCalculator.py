@@ -5,3 +5,5 @@ from langchain.prompts import PromptTemplate
 from langchain_community.utilities import wikipediaAPIWrapper
 from langchain.agents.agent_types import AgentType
 from langchain.callbacks import StdOutCallbackHandler
+
+st.set
