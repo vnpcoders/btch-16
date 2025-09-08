@@ -10,7 +10,7 @@ st.set_page_config(page_title="Text to Math Problem Solver")
 st.title("Text to Math problem Solver using Gemini")
 
 #Gemini ApI Key
-gemini_api_key= st.sidebar.text_input(Label="Goo",type='password')
+gemini_api_key= st.sidebar.text_input(Label="Google",type='password')
 if  not gemini_api_key:
     st.info("Please add your gemini API Key to Continue")
     st.stop()
