@@ -47,6 +47,6 @@ reasoning_tool=Tool(
 
 )
 
-assistant_agent=initialize
+assistant_agent=initialize_agent
 
 
