@@ -24,4 +24,6 @@ wikipedia_Tool=Tool(name="Wikipedia",func=wikipedia_wrapper,description="A tool 
 #math tool
 
 math_chain=LLMMathChain.from_llm(llm=llm)
-calculator=Tool
+calculator=Tool(
+    
+)
