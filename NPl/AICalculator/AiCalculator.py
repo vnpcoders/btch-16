@@ -73,7 +73,7 @@ if st.button("Find answer"):
                                         ,expand_new_thoughts=False)
             response=assistant_agent.run(st.session_state.messages,collbacks=[st_cb])
             st.session_state.messages.append
-            ({'role':'ass'})
+            ({'role':'assis'})
 
 
 
