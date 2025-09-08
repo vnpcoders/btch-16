@@ -33,5 +33,5 @@ calculator=Tool(
 prompt="""
                   you are my personel agent task with solving users mathamatical questions
 Question=st.text_input("question")
-Answer
+Answer:
 """
