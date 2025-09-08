@@ -36,4 +36,4 @@ Question=st.text_input("question")
 Answer:
 """
 question=st.text_input("Enter your problem here")
-prompt_template=PromptTemplate(inp)
+prompt_template=PromptTemplate(input_variables=[qu])
