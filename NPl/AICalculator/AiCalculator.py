@@ -47,6 +47,6 @@ reasoning_tool=Tool(
 
 )
 
-assistant_agent=ini
+assistant_agent=initial
 
 
