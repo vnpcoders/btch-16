@@ -76,7 +76,7 @@ if st.button("Find answer"):
             ({'role':'assistant','content':response})
 
             st.write("Response")
-            st.success
+            st.success(response)
 
 
 
