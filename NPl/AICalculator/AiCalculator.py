@@ -71,6 +71,6 @@ if st.button("Find answer"):
 
             st_cb=StdOutCallbackHandler(st.container()
                                         ,expand_new_thoughts=False)
-            res
+            respones
 
 
