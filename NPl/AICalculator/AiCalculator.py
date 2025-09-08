@@ -47,6 +47,6 @@ reasoning_tool=Tool(
 
 )
 
-assistant
+assistant_agent
 
 
