@@ -36,4 +36,4 @@ Question=st.text_input("question")
 Answer:
 """
 question=st.text_input("Enter your problem here")
-prompt
+prompt_te
