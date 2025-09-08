@@ -9,4 +9,4 @@ from langchain.callbacks import StdOutCallbackHandler
 st.set_page_config(page_title="Text to Math Problem Solver")
 st.title("Text to Math problem Solver using Gemini")
 
-#G
+#Gemini
