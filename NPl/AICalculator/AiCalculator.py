@@ -66,6 +66,6 @@ if st.button("Find answer"):
     if question:
         with st.spinner("Generation respones..."):
             st.session_state.messages.appned
-            ({'role':'assistant','content':response})
+            ({'role':'assistant','content':question})
 
 
