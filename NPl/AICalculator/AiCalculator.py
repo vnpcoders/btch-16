@@ -15,4 +15,4 @@ if  not gemini_api_key:
     st.info("Please add your gemini API Key to Continue")
     st.stop()
 
-llm= ChatGoogleGenerativeAI(model="gemini-2")
+llm= ChatGoogleGenerativeAI(model="gemini-2.5")
