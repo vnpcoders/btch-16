@@ -69,6 +69,6 @@ if st.button("Find answer"):
             ({'role':'assistant','content':question})
             st.chat_message("user").write(question)
 
-            st_cb=Std
+            st_cb=StdOut
 
 
