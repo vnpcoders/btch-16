@@ -65,13 +65,13 @@ for msg in st.session_state.messages:
 if st.button("Find answer"):
     if question:
         with st.spinner("Generation respones..."):
-            st.session_state.messages.appned
+            st.session_state.messages.append
             ({'role':'assistant','content':question})
             st.chat_message("user").write(question)
 
             st_cb=StdOutCallbackHandler(st.container()
                                         ,expand_new_thoughts=False)
             response=assistant_agent.run(st.session_state.messages,collbacks=[st_cb])
-            
+
 
 
