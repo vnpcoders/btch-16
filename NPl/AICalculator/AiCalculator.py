@@ -78,7 +78,7 @@ if st.button("Find answer"):
             st.write("Response")
             st.success(response)
     else:
-        st.warning('Please enter ')
+        st.warning('Please enter your ')
 
 
 
