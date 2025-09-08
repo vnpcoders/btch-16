@@ -37,4 +37,4 @@ Answer:
 """
 question=st.text_input("Enter your problem here")
 prompt_template=PromptTemplate(input_variables=['question'],template=prompt)
-chain=LLMChain
+chain=LLMChain(llm=llm,prompt=pr)
