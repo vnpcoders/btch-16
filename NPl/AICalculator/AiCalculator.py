@@ -49,6 +49,7 @@ reasoning_tool=Tool(
 
 assistant_agent=initialize_agent
 tools=[wikipedia_Tool,calculator,reasoning_tool],
-llm=llm
+llm=llm,
+
 
 
