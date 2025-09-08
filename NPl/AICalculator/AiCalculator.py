@@ -13,3 +13,4 @@ st.title("Text to Math problem Solver using Gemini")
 gemini_api_key= st.sidebar.text_input(Label="")
 if  not gemini_api_key:
     st.info("Please add your gemini API Key to Continue")
+    
