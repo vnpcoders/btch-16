@@ -6,4 +6,4 @@ from langchain_community.utilities import wikipediaAPIWrapper
 from langchain.agents.agent_types import AgentType
 from langchain.callbacks import StdOutCallbackHandler
 
-st.set_page_config(page_title="")
+st.set_page_config(page_title="Text")
