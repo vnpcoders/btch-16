@@ -70,6 +70,6 @@ if st.button("Find answer"):
             st.chat_message("user").write(question)
 
             st_cb=StdOutCallbackHandler(st.container()
-                                        ,expand_new)
+                                        ,expand_new_thou)
 
 
