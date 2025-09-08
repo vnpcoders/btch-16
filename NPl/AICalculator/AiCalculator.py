@@ -40,5 +40,6 @@ prompt_template=PromptTemplate(input_variables=['question'],template=prompt)
 chain=LLMChain(llm=llm,prompt=prompt_template)
 
 reasoning_tool=Tool(
-    name="Resoning Tool"
+    name="Resoning Tool",
+    
 )
