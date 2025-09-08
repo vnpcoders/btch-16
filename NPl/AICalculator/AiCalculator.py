@@ -74,6 +74,7 @@ if st.button("Find answer"):
             response=assistant_agent.run(st.session_state.messages,collbacks=[st_cb])
             st.session_state.messages.append
             ({'role':'assistant','content':response})
+            
 
 
 
