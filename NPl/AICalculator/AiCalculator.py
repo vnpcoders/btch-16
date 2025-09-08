@@ -4,7 +4,7 @@ from langchain.chains import LLMMathChain,LLMChain
 from langchain.prompts import PromptTemplate
 from langchain_community.utilities import wikipediaAPIWrapper
 from langchain.agents.agent_types import AgentType
-from langchain.agents import Tool,initialize
+from langchain.agents import Tool,initialize_
 from langchain.callbacks import StdOutCallbackHandler
 
 st.set_page_config(page_title="Text to Math Problem Solver")
