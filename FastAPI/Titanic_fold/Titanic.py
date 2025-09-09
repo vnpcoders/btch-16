@@ -8,13 +8,13 @@ import pandas as pd
 
 # Load model and encoders
 with open("sex_encoder.pkl", "rb") as f:
-    sex_encoder = pickle.load(f)
+    model = pickle.load(f)
 
 with open("log_model.pkl", "rb") as f:
     model = pickle.load(f)
 
 with open("emb_encoder.pkl", "rb") as f:
-    emb_encoders = pickle.load(f)
+    encoders = pickle.load(f)
 
 app = FastAPI(title="Titanic Survival Prediction API")
 
