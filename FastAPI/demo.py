@@ -3,8 +3,6 @@ from pydantic import BaseModel
 
 app=FastAPI()
 
-
-
 #define a pydantic model for request validataion
 class Item(BaseModel):
     name:str
