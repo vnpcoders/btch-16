@@ -16,8 +16,8 @@ class Passenger(BaseModel):
     Family: Annotated[int, Field(...,gt = 1, lt = 20,description="Family Members")]
     CCAvg: Annotated[int, Field(..., gt = 0,description="CCAvg")]
 
-    Income: Annotated[int, Selectbox(...,gt = 0,description="Income")]
-    Family: Annotated[int, Field(...,gt = 1, lt = 20,description="Family Members")]
+    Income: Annotated[Literal["S","C","Q"], Fi(...,gt = 0,description="Income")]
+    Mortgage: Annotated[int, Field(...,gt = 0,description="Mortgage")]
 
     Embarked: Annotated[Literal["S","C","Q"], Field(..., description="Age of the user")]
 """
@@ -26,7 +26,7 @@ class Passenger(BaseModel):
 
 
 Education=st.selectbox("Education",["😒undergraduat","😊graduat","😂postgraduat"])
-Mortgage=st.number_input("Mortgage",min_value=0)
+
 Securities_Account=st.selectbox("Securities_Account",["yes","No"])
 CD_Account=st.selectbox("CD_Account",["yes","No"])
 Online=st.selectbox("Online",["yes","No"])
