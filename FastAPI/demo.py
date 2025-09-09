@@ -12,3 +12,5 @@ class Item(BaseModel):
 @app.get('/')
 def read_out():
     return{"message":"welcome to FastAPI tutorial"}
+
+
