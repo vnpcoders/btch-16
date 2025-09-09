@@ -8,13 +8,13 @@ import pandas as pd
 
 # Load model and encoders
 with open("sex_encoder.pkl", "rb") as f:
-    model = pickle.load(f)
+    sex_encoder = pickle.load(f)
 
 with open("log_model.pkl", "rb") as f:
     model = pickle.load(f)
 
 with open("emb_encoder.pkl", "rb") as f:
-    encoders = pickle.load(f)
+    emb_encoders = pickle.load(f)
 
 app = FastAPI(title="Titanic Survival Prediction API")
 
@@ -32,7 +32,7 @@ class Passenger(BaseModel):
 @app.post("/predict")
 def predict_survival(passenger: Passenger):
     # Encode categorical fields
-    sex_encoded = encoders['Sex'].transform([passenger.Sex])[0]
+    sex_encoded = sexencoders['Sex'].transform([passenger.Sex])[0]
     embarked_encoded = encoders['Embarked'].transform([passenger.Embarked])[0]
 
     # Create input DataFrame
