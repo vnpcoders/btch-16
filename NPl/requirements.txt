@@ -40,4 +40,4 @@ wikipedia
 numexpr
 fastapi
 pydantic
-
+uv
