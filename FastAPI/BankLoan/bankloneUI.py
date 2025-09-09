@@ -16,7 +16,7 @@ class Passenger(BaseModel):
     Fare: Annotated[int, Field(...,description="Fare of the Passenger")]
     Embarked: Annotated[Literal["S","C","Q"], Field(..., description="Age of the user")]
 """
-Experince=st.number_input("Experince",min_value=0,)
+
 Income=st.number_input("Income",min_value=0,)
 Family=st.number_input("Family",min_value=1,max_value=20)
 CCAvg=st.number_input("CCAvg",min_value=0,)
