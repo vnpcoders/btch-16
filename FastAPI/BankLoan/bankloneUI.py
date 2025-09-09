@@ -15,7 +15,7 @@ class banklone(BaseModel):
     Income: Annotated[int, Field(...,gt = 0,description="Income")]
     Family: Annotated[int, Field(...,gt = 1, lt = 20,description="Family Members")]
     CCAvg: Annotated[int, Field(..., gt = 0,description="CCAvg")]
-    Education: Annotated[Literal["undergraduat","graduat","😂postgraduat"], Field(...,description="Education select only 😒undergraduat,😊graduat,😂postgraduat")]
+    Education: Annotated[Literal["undergraduat","graduat","postgraduat"], Field(...,description="Education select only 😒undergraduat,😊graduat,😂postgraduat")]
     Mortgage: Annotated[int, Field(...,gt = 0,description="Mortgage")]
     Securities_Account: Annotated[Literal["YES","NO"], Field(..., description="Securities_Account")]
     CD_Account: Annotated[Literal["YES","NO"], Field(..., description="CD_Account")]
@@ -25,7 +25,7 @@ class banklone(BaseModel):
 @app.post("/predict")
 def predict_lone(banklone: banklone):
     # Encode categorical fields
-    Education_encoded=0 if banklone.Education=="😒undergraduat"else (1 if banklone  .Education=="😊graduat" else 2 )
+    Education_encoded=0 if banklone.Education=="undergraduat"else (1 if banklone  .Education=="😊graduat" else 2 )
     Securities_Account_encoder= 1 if banklone.Securities_Account=="yes"else 0
     CD_Account_encoder=1 if banklone.CD_Account=="yes" else 0
     Online_encoder=1 if banklone.Online=="yes" else 0
