@@ -1,6 +1,8 @@
-import numpy as np
+from fastapi import FastAPI
+from pydantic import BaseModel, Field, computed_field
+from typing import Annotated,Literal
 import pickle
-import streamlit as st
+import pandas as pd
 
 model=pickle.load(open("rf_model.pkl","rb"))
 
