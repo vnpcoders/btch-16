@@ -15,7 +15,7 @@ class banklone(BaseModel):
     Income: Annotated[int, Field(...,gt = 0,description="Income")]
     Family: Annotated[int, Field(...,gt = 1, lt = 20,description="Family Members")]
     CCAvg: Annotated[int, Field(..., gt = 0,description="CCAvg")]
-    Education: Annotated[Literal["😒undergraduat","😊graduat","😂postgraduat"], Field(...,description="Education select only 😒undergraduat,😊graduat,😂postgraduat")]
+    Education: Annotated[Literal["undergraduat","graduat","😂postgraduat"], Field(...,description="Education select only 😒undergraduat,😊graduat,😂postgraduat")]
     Mortgage: Annotated[int, Field(...,gt = 0,description="Mortgage")]
     Securities_Account: Annotated[Literal["YES","NO"], Field(..., description="Securities_Account")]
     CD_Account: Annotated[Literal["YES","NO"], Field(..., description="CD_Account")]
