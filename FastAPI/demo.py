@@ -1,4 +1,5 @@
-from fastapi import Fast
+from fastapi import FastAPI
+from pydantic import Base
 
 
 
