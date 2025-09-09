@@ -23,7 +23,7 @@ class banklone(BaseModel):
     CreditCard: Annotated[Literal["YES","NO"], Field(..., description="CreditCard")]
 
 @app.post("/predict")
-def predict_survival(bank: banklone):
+def predict_survival(banklone: banklone):
     Education_encoded=0 if banklone.Education=="😒undergraduat"else (1 if banklone  .Education=="😊graduat" else 2 )
     Securities_Account_encoder= 1 if banklone.Securities_Account=="yes"else 0
     CD_Account_encoder=1 if banklone.CD_Account=="yes" else 0
