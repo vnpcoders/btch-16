@@ -22,8 +22,9 @@ class Passenger(BaseModel):
     Online: Annotated[Literal["YES","NO"], Field(..., description="Online")]
     CreditCard: Annotated[Literal["YES","NO"], Field(..., description="CreditCard")]
 
-
-Education_encoded=0 if Passenger.Education=="😒undergraduat"else (1 if Passenger.Education=="😊graduat" else 2 )
+@app.post("/predict")
+def predict_survival(passenger: Passenger):
+    Education_encoded=0 if Passenger.Education=="😒undergraduat"else (1 if Passenger.Education=="😊graduat" else 2 )
 Securities_Account_encoder= 1 if Passenger.Securities_Account=="yes"else 0
 CD_Account_encoder=1 if Passenger.CD_Account=="yes" else 0
 Online_encoder=1 if Passenger.Online=="yes" else 0
