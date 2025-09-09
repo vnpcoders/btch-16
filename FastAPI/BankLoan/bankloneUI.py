@@ -17,7 +17,7 @@ class Passenger(BaseModel):
     Embarked: Annotated[Literal["S","C","Q"], Field(..., description="Age of the user")]
 """
 
-Income=st.number_input("Income",min_value=0,)
+
 Family=st.number_input("Family",min_value=1,max_value=20)
 CCAvg=st.number_input("CCAvg",min_value=0,)
 Education=st.selectbox("Education",["😒undergraduat","😊graduat","😂postgraduat"])
