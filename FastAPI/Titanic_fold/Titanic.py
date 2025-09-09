@@ -14,7 +14,7 @@ with open("log_model.pkl", "rb") as f:
     model = pickle.load(f)
 
 with open("emb_encoder.pkl", "rb") as f:
-    encoders = pickle.load(f)
+    emb_encoders = pickle.load(f)
 
 app = FastAPI(title="Titanic Survival Prediction API")
 
