@@ -21,7 +21,7 @@ class Passenger(BaseModel):
     Embarked: Annotated[Literal["YES","NO"], Field(..., description="Age of the user")]
     Embarked: Annotated[Literal["YES","NO"], Field(..., description="Age of the user")]
     Embarked: Annotated[Literal["YES","NO"], Field(..., description="Age of the user")]
-    Embarked: Annotated[Literal["S","NO"], Field(..., description="Age of the user")]
+    Embarked: Annotated[Literal["YES","NO"], Field(..., description="Age of the user")]
 """
 
 
