@@ -32,7 +32,7 @@ class Passenger(BaseModel):
 @app.post("/predict")
 def predict_survival(passenger: Passenger):
     # Encode categorical fields
-    sex_encoded = encoders['Sex'].transform([passenger.Sex])[0]
+    sex_encoded = sex_encoders['Sex'].transform([passenger.Sex])[0]
     embarked_encoded = encoders['Embarked'].transform([passenger.Embarked])[0]
 
     # Create input DataFrame
