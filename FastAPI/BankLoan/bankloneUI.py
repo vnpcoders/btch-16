@@ -24,12 +24,13 @@ class banklone(BaseModel):
 
 @app.post("/predict")
 def predict_lone(banklone: banklone):
+    # Encode categorical fields
     Education_encoded=0 if banklone.Education=="😒undergraduat"else (1 if banklone  .Education=="😊graduat" else 2 )
     Securities_Account_encoder= 1 if banklone.Securities_Account=="yes"else 0
     CD_Account_encoder=1 if banklone.CD_Account=="yes" else 0
     Online_encoder=1 if banklone.Online=="yes" else 0
     CreditCard_encoder= 1 if banklone.CreditCard=="yes" else 0
 
-    
+
 
         
