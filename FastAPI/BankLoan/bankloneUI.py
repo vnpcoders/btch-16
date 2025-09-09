@@ -14,12 +14,12 @@ class Passenger(BaseModel):
     Experience: Annotated[int, Field(..., gt = 0,description="Experience")]
     Income: Annotated[int, Field(...,gt = 0,description="Income")]
     Family: Annotated[int, Field(...,gt = 1, lt = 20,description="Family Members")]
-    
+
     Embarked: Annotated[Literal["S","C","Q"], Field(..., description="Age of the user")]
 """
 
 
-Family=st.number_input("Family",min_value=1,max_value=20)
+
 CCAvg=st.number_input("CCAvg",min_value=0,)
 Education=st.selectbox("Education",["😒undergraduat","😊graduat","😂postgraduat"])
 Mortgage=st.number_input("Mortgage",min_value=0)
