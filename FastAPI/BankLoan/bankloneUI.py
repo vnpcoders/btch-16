@@ -50,5 +50,5 @@ def predict_lone(banklone: banklone):
 
     # Predict
     prediction = model.predict(input_df)[0]
-    return {"survived": int(prediction)}
+    return {"": int(prediction)}
         
