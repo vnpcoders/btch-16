@@ -30,7 +30,7 @@ class Passenger(BaseModel):
     Embarked: Annotated[Literal["S","C","Q"], Field(..., description="Age of the user")]
 
 @app.post("/predict")
-def predict_survival(passenger: Passenger):
+def predict_lo(passenger: Passenger):
     # Encode categorical fields
     sex_encoded = sex_encoder.transform([passenger.Sex])[0]
     embarked_encoded = emb_encoders.transform([passenger.Embarked])[0]
