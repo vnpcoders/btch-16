@@ -25,7 +25,6 @@ class Passenger(BaseModel):
 
 
 
-Education=st.selectbox("Education",["😒undergraduat","😊graduat","😂postgraduat"])
 
 Securities_Account=st.selectbox("Securities_Account",["yes","No"])
 CD_Account=st.selectbox("CD_Account",["yes","No"])
