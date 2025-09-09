@@ -23,7 +23,7 @@ class Passenger(BaseModel):
     CreditCard: Annotated[Literal["YES","NO"], Field(..., description="CreditCard")]
 
 
-Education_encoded=0 if PEducation=="😒undergraduat"else (1 if Education=="😊graduat" else 2 )
+Education_encoded=0 if PassEducation=="😒undergraduat"else (1 if Education=="😊graduat" else 2 )
 Securities_Account_encoder= 1 if Securities_Account=="yes"else 0
 CD_Account_encoder=1 if CD_Account=="yes" else 0
 Online_encoder=1 if Online=="yes" else 0
