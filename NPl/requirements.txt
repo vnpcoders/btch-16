@@ -39,3 +39,4 @@ pysqlite3-binary==0.5.1
 wikipedia
 numexpr
 fastapi
+py
