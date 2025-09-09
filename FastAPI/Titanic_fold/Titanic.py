@@ -33,7 +33,7 @@ class Passenger(BaseModel):
 def predict_survival(passenger: Passenger):
     # Encode categorical fields
     sex_encoded = encoders['Sex'].transform([passenger.Sex])[0]
-    embarked_encoded = encoders['Embarked'].transform([passenger.Embarked])[0]
+    embarked_encoded = encoders.transform([passenger.Embarked])[0]
 
     # Create input DataFrame
     input_df = pd.DataFrame([{
