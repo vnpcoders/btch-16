@@ -41,7 +41,9 @@ def predict_lone(banklone: banklone):
         "Education": Education_encoded,
         "Mortgage": banklone.Mortgage,
         "Education": Education_encoded,
-        
+        "Education": Education_encoded,
+        "Education": Education_encoded,
+        "Education": Education_encoded,
 
 
     }])
