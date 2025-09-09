@@ -21,4 +21,4 @@ def read_item(item_id:int,q:str=None):
 
 @app.post("/item/{item_id}")
 def create_item(item:Item):
-    return{"message":""}
+    return{"message":"It"}
