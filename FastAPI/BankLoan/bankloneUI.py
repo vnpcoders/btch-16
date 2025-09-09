@@ -9,7 +9,7 @@ model=pickle.load(open("rf_model.pkl","rb"))
 app = FastAPI(title="CHECK ELEGIBLITY FOR LOAN AMOUNT ")
 
 
-Age=st.slider("Age",min_value=18,max_value=80,)
+"""Age=st.slider("Age",min_value=18,max_value=80,)
 Experince=st.number_input("Experince",min_value=0,)
 Income=st.number_input("Income",min_value=0,)
 Family=st.number_input("Family",min_value=1,max_value=20)
@@ -19,7 +19,7 @@ Mortgage=st.number_input("Mortgage",min_value=0)
 Securities_Account=st.selectbox("Securities_Account",["yes","No"])
 CD_Account=st.selectbox("CD_Account",["yes","No"])
 Online=st.selectbox("Online",["yes","No"])
-CreditCard=st.selectbox("CreditCard",["yes","No"])
+CreditCard=st.selectbox("CreditCard",["yes","No"])"""
 
 Education_encoded=0 if Education=="😒undergraduat"else (1 if Education=="😊graduat" else 2 )
 Securities_Account_encoder= 1 if Securities_Account=="yes"else 0
