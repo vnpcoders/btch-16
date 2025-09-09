@@ -31,6 +31,15 @@ def predict_lone(banklone: banklone):
     Online_encoder=1 if banklone.Online=="yes" else 0
     CreditCard_encoder= 1 if banklone.CreditCard=="yes" else 0
 
-    
+    # Create input DataFrame
+    input_df = pd.DataFrame([{
+        "Pclass": passenger.Pclass,
+        "Sex": sex_encoded,
+        "Age": passenger.Age,
+        "SibSp": passenger.SibSp,
+        "Parch": passenger.Parch,
+        "Fare": passenger.Fare,
+        "Embarked": embarked_encoded
+    }])
 
         
