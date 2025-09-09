@@ -6,7 +6,7 @@ import pandas as pd
 
 model=pickle.load(open("rf_model.pkl","rb"))
 
-app = FastAPI(title("CHECK ELEGIBLITY FOR LOAN AMOUNT "))
+app = FastAPI(title="CHECK ELEGIBLITY FOR LOAN AMOUNT ")
 
 
 Age=st.slider("Age",min_value=18,max_value=80,)
