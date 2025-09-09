@@ -10,7 +10,7 @@ import pandas as pd
 with open("sex_encoder.pkl", "rb") as f:
     model = pickle.load(f)
 
-with open("label_encoders.pkl", "rb") as f:
+with open("emb_encoders.pkl", "rb") as f:
     encoders = pickle.load(f)
 
 app = FastAPI(title="Titanic Survival Prediction API")
