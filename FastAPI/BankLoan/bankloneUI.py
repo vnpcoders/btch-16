@@ -24,7 +24,7 @@ class Passenger(BaseModel):
 
 
 
-CCAvg=st.number_input("CCAvg",min_value=0,)
+
 Education=st.selectbox("Education",["😒undergraduat","😊graduat","😂postgraduat"])
 Mortgage=st.number_input("Mortgage",min_value=0)
 Securities_Account=st.selectbox("Securities_Account",["yes","No"])
