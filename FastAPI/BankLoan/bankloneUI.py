@@ -14,6 +14,9 @@ class Passenger(BaseModel):
     Experience: Annotated[int, Field(..., gt = 0,description="Experience")]
     Income: Annotated[int, Field(...,gt = 0,description="Income")]
     Family: Annotated[int, Field(...,gt = 1, lt = 20,description="Family Members")]
+    Experience: Annotated[int, Field(..., gt = 0,description="Experience")]
+    Income: Annotated[int, Field(...,gt = 0,description="Income")]
+    Family: Annotated[int, Field(...,gt = 1, lt = 20,description="Family Members")]
 
     Embarked: Annotated[Literal["S","C","Q"], Field(..., description="Age of the user")]
 """
