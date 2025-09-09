@@ -7,7 +7,7 @@ import pickle
 import pandas as pd
 
 # Load model and encoders
-with open("sex_en.pkl", "rb") as f:
+with open("sex_encoder.pkl", "rb") as f:
     model = pickle.load(f)
 
 with open("label_encoders.pkl", "rb") as f:
