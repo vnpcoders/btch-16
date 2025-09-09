@@ -10,7 +10,7 @@ import pandas as pd
 with open("sex_encoder.pkl", "rb") as f:
     model = pickle.load(f)
 
-with open("log_.pkl", "rb") as f:
+with open("log_model.pkl", "rb") as f:
     model = pickle.load(f)
 
 with open("emb_encoder.pkl", "rb") as f:
