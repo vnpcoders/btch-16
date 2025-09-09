@@ -37,8 +37,8 @@ def predict_lone(banklone: banklone):
         "Sex": sex_encoded,
         "Age": banklone.Age,
         "SibSp": banklone.SibSp,
-        "Parch": passengerbanklone.Parch,
-        "Fare": passenger.Fare,
+        "Parch": banklone.Parch,
+        "Fare": banklone.Fare,
         "Embarked": embarked_encoded
     }])
 
