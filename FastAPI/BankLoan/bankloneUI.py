@@ -30,13 +30,6 @@ def predict_lone(banklone: banklone):
     Online_encoder=1 if banklone.Online=="yes" else 0
     CreditCard_encoder= 1 if banklone.CreditCard=="yes" else 0
 
-if st.button("Predict"):
-    input_data=np.array([[Age,Experince,Income,Family,CCAvg,Education_encoded,Mortgage,Securities_Account_encoder,CD_Account_encoder,Online_encoder,CreditCard_encoder]])
-    prediction=model.predict(input_data)[0]
 
-    if prediction==1:
-        st.success("prediction: Aplicabel for loan")
-    else:
-        st.error("pridiction: Not aplicabel for loan")
 
         
