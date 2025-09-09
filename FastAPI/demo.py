@@ -14,3 +14,6 @@ def read_out():
     return{"message":"welcome to FastAPI tutorial"}
 
 
+@app.get("/items/{item_id}")
+def read_item(item_id:int,q:str=None):
+    return
