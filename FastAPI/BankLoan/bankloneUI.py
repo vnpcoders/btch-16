@@ -9,6 +9,7 @@ model=pickle.load(open("rf_model.pkl","rb"))
 app = FastAPI(title="CHECK ELEGIBLITY FOR LOAN AMOUNT ")
 
 
+
 """Age=st.slider("Age",min_value=18,max_value=80,)
 Experince=st.number_input("Experince",min_value=0,)
 Income=st.number_input("Income",min_value=0,)
