@@ -40,6 +40,9 @@ def predict_lone(banklone: banklone):
         "CCAvg": banklone.CCAvg,
         "Education": Education_encoded,
         "Mortgage": banklone.Mortgage,
+
+
+        
     }])
 
         
