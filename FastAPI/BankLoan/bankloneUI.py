@@ -20,8 +20,8 @@ class Passenger(BaseModel):
     Mortgage: Annotated[int, Field(...,gt = 0,description="Mortgage")]
     Embarked: Annotated[Literal["YES","NO"], Field(..., description="Age of the user")]
     Embarked: Annotated[Literal["YES","NO"], Field(..., description="Age of the user")]
-    Embarked: Annotated[Literal["S","C"], Field(..., description="Age of the user")]
     Embarked: Annotated[Literal["S",""], Field(..., description="Age of the user")]
+    Embarked: Annotated[Literal["S","NO"], Field(..., description="Age of the user")]
 """
 
 
