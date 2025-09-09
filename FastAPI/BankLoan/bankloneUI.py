@@ -9,7 +9,7 @@ model=pickle.load(open("rf_model.pkl","rb"))
 app = FastAPI(title="CHECK ELEGIBLITY FOR LOAN AMOUNT ")
 
 
-class Passenger(BaseModel):
+class bank(BaseModel):
     Age: Annotated[int, Field(..., gt = 18, lt = 80,description="Age of the Passenger")]
     Experience: Annotated[int, Field(..., gt = 0,description="Experience")]
     Income: Annotated[int, Field(...,gt = 0,description="Income")]
@@ -23,12 +23,12 @@ class Passenger(BaseModel):
     CreditCard: Annotated[Literal["YES","NO"], Field(..., description="CreditCard")]
 
 @app.post("/predict")
-def predict_survival(passenger: Passenger):
-    Education_encoded=0 if Passenger.Education=="😒undergraduat"else (1 if Passenger  .Education=="😊graduat" else 2 )
-    Securities_Account_encoder= 1 if Passenger.Securities_Account=="yes"else 0
-    CD_Account_encoder=1 if Passenger.CD_Account=="yes" else 0
-    Online_encoder=1 if Passenger.Online=="yes" else 0
-    CreditCard_encoder= 1 if Passenger.CreditCard=="yes" else 0
+def predict_survival(passenger: bank):
+    Education_encoded=0 if bank.Education=="😒undergraduat"else (1 if bank  .Education=="😊graduat" else 2 )
+    Securities_Account_encoder= 1 if bank.Securities_Account=="yes"else 0
+    CD_Account_encoder=1 if bank.CD_Account=="yes" else 0
+    Online_encoder=1 if bank.Online=="yes" else 0
+    CreditCard_encoder= 1 if bank.CreditCard=="yes" else 0
 
 if st.button("Predict"):
     input_data=np.array([[Age,Experince,Income,Family,CCAvg,Education_encoded,Mortgage,Securities_Account_encoder,CD_Account_encoder,Online_encoder,CreditCard_encoder]])
