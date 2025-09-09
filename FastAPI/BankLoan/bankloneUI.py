@@ -15,7 +15,7 @@ class Passenger(BaseModel):
     Parch: Annotated[float, Field(...,description="Parch of the passenger")]
     Fare: Annotated[int, Field(...,description="Fare of the Passenger")]
     Embarked: Annotated[Literal["S","C","Q"], Field(..., description="Age of the user")]
-"""Age=st.slider("Age",min_value=18,max_value=80,)
+"""
 Experince=st.number_input("Experince",min_value=0,)
 Income=st.number_input("Income",min_value=0,)
 Family=st.number_input("Family",min_value=1,max_value=20)
