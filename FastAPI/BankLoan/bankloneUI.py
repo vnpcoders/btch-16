@@ -38,8 +38,8 @@ def predict_lone(banklone: banklone):
         "Income": banklone.Income,
         "Family": banklone.Family,
         "CCAvg": banklone.CCAvg,
-        "Education": embarked_encoded
-        
+        "Education": Education_encoded,
+        "Mortgage": banklone.Mortgage,
     }])
 
         
