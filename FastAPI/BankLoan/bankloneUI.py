@@ -22,16 +22,7 @@ class Passenger(BaseModel):
     CD_Account: Annotated[Literal["YES","NO"], Field(..., description="CD_Account")]
     Online: Annotated[Literal["YES","NO"], Field(..., description="Online")]
     CreditCard: Annotated[Literal["YES","NO"], Field(..., description="CreditCard")]
-"""
 
-
-
-
-
-Securities_Account=st.selectbox("Securities_Account",["yes","No"])
-CD_Account=st.selectbox("CD_Account",["yes","No"])
-Online=st.selectbox("Online",["yes","No"])
-CreditCard=st.selectbox("CreditCard",["yes","No"])"""
 
 Education_encoded=0 if Education=="😒undergraduat"else (1 if Education=="😊graduat" else 2 )
 Securities_Account_encoder= 1 if Securities_Account=="yes"else 0
