@@ -8,7 +8,7 @@ import pandas as pd
 
 # Load model and encoders
 with open("sex_encoder.pkl", "rb") as f:
-    sex = pickle.load(f)
+    sex_enc = pickle.load(f)
 
 with open("log_model.pkl", "rb") as f:
     model = pickle.load(f)
