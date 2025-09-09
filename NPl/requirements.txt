@@ -38,3 +38,4 @@ lxml_html_clean
 pysqlite3-binary==0.5.1 
 wikipedia
 numexpr
+fastapi
