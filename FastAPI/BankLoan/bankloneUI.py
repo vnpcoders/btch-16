@@ -34,7 +34,6 @@ def predict_lone(banklone: banklone):
     # Create input DataFrame
     input_df = pd.DataFrame([{
         "Pclass": banklone.Age,
-        
         "Experience": banklone.Experience,
         "SibSp": banklone.SibSp,
         "Parch": banklone.Parch,
