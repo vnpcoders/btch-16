@@ -10,8 +10,7 @@ app = FastAPI(title="CHECK ELEGIBLITY FOR LOAN AMOUNT ")
 
 
 class Passenger(BaseModel):
-    Pclass: Annotated[int, Field(...,gt = 1, ls = 4, description="Passanger Class")]
-    Sex: Annotated[Literal['male','female'], Field(..., description="Gender of the user")]  # 'male' or 'female'
+      # 'male' or 'female'
     Age: Annotated[int, Field(..., gt = 0, lt = 120,description="Age of the Passenger")]
     SibSp: Annotated[int, Field(..., gt = 0, lt = 120,description="SibSp of the user")]
     Parch: Annotated[float, Field(...,description="Parch of the passenger")]
