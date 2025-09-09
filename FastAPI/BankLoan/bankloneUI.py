@@ -33,7 +33,7 @@ def predict_lone(banklone: banklone):
 
     # Create input DataFrame
     input_df = pd.DataFrame([{
-        "Pclass": passenger.Pclass,
+        "Pclass": passenger.Age,
         "Sex": sex_encoded,
         "Age": passenger.Age,
         "SibSp": passenger.SibSp,
