@@ -25,8 +25,8 @@ class Passenger(BaseModel):
 
 Education_encoded=0 if Passenger.Education=="😒undergraduat"else (1 if Passenger.Education=="😊graduat" else 2 )
 Securities_Account_encoder= 1 if Passenger.Securities_Account=="yes"else 0
-CD_Account_encoder=1 if CD_Account=="yes" else 0
-Online_encoder=1 if Online=="yes" else 0
+CD_Account_encoder=1 if Passenger.CD_Account=="yes" else 0
+Online_encoder=1 if Passenger.Online=="yes" else 0
 CreditCard_encoder= 1 if CreditCard=="yes" else 0
 
 if st.button("Predict"):
