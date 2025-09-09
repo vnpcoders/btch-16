@@ -31,6 +31,6 @@ def predict_lone(banklone: banklone):
     Online_encoder=1 if banklone.Online=="yes" else 0
     CreditCard_encoder= 1 if banklone.CreditCard=="yes" else 0
 
-
+    
 
         
