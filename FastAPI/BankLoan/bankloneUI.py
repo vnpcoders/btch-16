@@ -12,7 +12,7 @@ app = FastAPI(title="CHECK ELEGIBLITY FOR LOAN AMOUNT ")
 class Passenger(BaseModel):
     Age: Annotated[int, Field(..., gt = 18, lt = 80,description="Age of the Passenger")]
     Experience: Annotated[int, Field(..., gt = 0,description="Experience")]
-    Income: Annotated[int, Field(...,gt = 0,description="Income per year")]
+    Income: Annotated[int, Field(...,gt = 0,description="Income ")]
     Fare: Annotated[int, Field(...,description="Fare of the Passenger")]
     Embarked: Annotated[Literal["S","C","Q"], Field(..., description="Age of the user")]
 """
