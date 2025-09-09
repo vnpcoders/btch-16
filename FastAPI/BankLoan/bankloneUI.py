@@ -19,7 +19,7 @@ class Passenger(BaseModel):
     Income: Annotated[Literal["😒undergraduat","😊graduat","😂postgraduat"], Field(...,description="Education select only 😒undergraduat,😊graduat,😂postgraduat")]
     Mortgage: Annotated[int, Field(...,gt = 0,description="Mortgage")]
     Securities_Account: Annotated[Literal["YES","NO"], Field(..., description="Securities_Account")]
-    CD_Account: Annotated[Literal["YES","NO"], Field(..., description="Age of the user")]
+    CD_Account: Annotated[Literal["YES","NO"], Field(..., description="CD_Account")]
     Embarked: Annotated[Literal["YES","NO"], Field(..., description="Age of the user")]
     Embarked: Annotated[Literal["YES","NO"], Field(..., description="Age of the user")]
 """
