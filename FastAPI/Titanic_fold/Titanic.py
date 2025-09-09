@@ -7,7 +7,7 @@ import pickle
 import pandas as pd
 
 # Load model and encoders
-with open("titanic_model.pkl", "rb") as f:
+with open(".pkl", "rb") as f:
     model = pickle.load(f)
 
 with open("label_encoders.pkl", "rb") as f:
