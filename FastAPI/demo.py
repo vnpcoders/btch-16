@@ -1,5 +1,7 @@
 from fastapi import FastAPI
-from pydantic import Base
+from pydantic import BaseModel
+
+app
 
 
 
