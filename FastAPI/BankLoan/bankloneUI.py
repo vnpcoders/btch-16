@@ -23,7 +23,7 @@ class bankloan(BaseModel):
     CreditCard: Annotated[Literal["YES","NO"], Field(..., description="CreditCard")]
 
 @app.post("/predict")
-def predict_lone(banklone: banklone):
+def predict_lone(banklone: bankloan):
     # Encode categorical fields
     Education_encoded=0 if bankloan.Education=="undergraduat"else (1 if bankloan.Education=="graduat" else 2 )
     Securities_Account_encoder= 1 if bankloan.Securities_Account=="YES"else 0
