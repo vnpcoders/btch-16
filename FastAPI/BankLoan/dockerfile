@@ -18,4 +18,4 @@ EXPOSE 8000
 
 
 #RUN fastAPI app with uvicorn
-CMD ["uvicorn","bank:app","--host","0.0.0.0","--port","8000"]
+CMD ["uvicorn","bankloanUI:app","--host","0.0.0.0","--port","8000"]
