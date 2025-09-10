@@ -2,7 +2,7 @@
 From python:3.11.9-slim
 
 #set working directory
-WORKDIR /bankloan
+WORKDIR /bankloanUI
 
 #copy requirements.txt first (for caching)
 COPY requirement.txt .
