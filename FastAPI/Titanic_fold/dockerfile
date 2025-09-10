@@ -17,5 +17,6 @@ COPY . .
 EXPOSE 8000
 
 #run Fastapi app with Uvicorn
-
+#RUN fastAPI app with uvicorn
+CMD ["uvicorn","TitanicApp:app","--host","0.0.0.0","--port","8000"]
 
