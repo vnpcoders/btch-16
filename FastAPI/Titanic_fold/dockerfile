@@ -1,0 +1,21 @@
+# Use python 3.11.9 as base image
+From python:3.11.9-slim
+
+#set working directory
+WORKDIR /Titanic
+
+#copy requirements.txt first (for caching)
+COPY requirement.txt .
+
+# Install dependency
+RUN pip install --no-cache-dir -r requirement.txt
+
+#copy all project file (FastAPI app+pickle files)
+COPY . .
+
+#Expose FastAPI port
+EXPOSE 8000
+
+#run Fastapi app with Uvicorn
+CMD ["uvicorn", "Titanic:app", "--host", "0.0.0.0", "--port", "8000"]
+
