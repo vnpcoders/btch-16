@@ -33,7 +33,7 @@ def predict_lone(banklone: banklone):
 
     # Create input DataFrame
     input_df = pd.DataFrame([{
-        "Age": banklone.Age,
+        "Age": bankloan.Age,
         "Experience": banklone.Experience,
         "Income": banklone.Income,
         "Family": banklone.Family,
