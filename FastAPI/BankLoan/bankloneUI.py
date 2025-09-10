@@ -39,7 +39,7 @@ def predict_lone(banklone: banklone):
         "Family": bankloan.Family,
         "CCAvg": bankloan.CCAvg,
         "Education": Education_encoded,
-        "Mortgage": banklone.Mortgage,
+        "Mortgage": bankloan.Mortgage,
         "Securities_Account": Securities_Account_encoder,
         "CD_Account": CD_Account_encoder,
         "Online": Online_encoder,
