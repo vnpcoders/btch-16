@@ -9,7 +9,7 @@ model=pickle.load(open("rf_model.pkl","rb"))
 app = FastAPI(title="CHECK ELEGIBLITY FOR LOAN AMOUNT ")
 
 
-class banklone(BaseModel):
+class banklon(BaseModel):
     Age: Annotated[int, Field(..., gt = 18, lt = 80,description="Age of the Passenger")]
     Experience: Annotated[int, Field(..., gt = 0,description="Experience")]
     Income: Annotated[int, Field(...,gt = 0,description="Income")]
