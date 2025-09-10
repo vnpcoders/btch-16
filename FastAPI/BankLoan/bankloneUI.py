@@ -28,7 +28,7 @@ def predict_lone(banklone: banklone):
     Education_encoded=0 if banklone.Education=="undergraduat"else (1 if banklone.Education=="graduat" else 2 )
     Securities_Account_encoder= 1 if banklone.Securities_Account=="YES"else 0
     CD_Account_encoder=1 if banklone.CD_Account=="YES" else 0
-    Online_encoder=1 if banklone.Online=="YES" else 0
+    Online_encoder=1 if bankloan.Online=="YES" else 0
     CreditCard_encoder= 1 if bankloan.CreditCard=="YES" else 0
 
     # Create input DataFrame
