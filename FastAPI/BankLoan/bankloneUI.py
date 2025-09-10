@@ -36,7 +36,7 @@ def predict_lone(banklone: banklone):
         "Age": bankloan.Age,
         "Experience": bankloan.Experience,
         "Income": bankloan.Income,
-        "Family": banklone.Family,
+        "Family": bankloan.Family,
         "CCAvg": banklone.CCAvg,
         "Education": Education_encoded,
         "Mortgage": banklone.Mortgage,
