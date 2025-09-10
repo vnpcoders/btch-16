@@ -18,7 +18,7 @@ class bankloan(BaseModel):
     Education: Annotated[Literal["undergraduat","graduat","postgraduat"], Field(...,description="Education select only 😒undergraduat,😊graduat,😂postgraduat")]
     Mortgage: Annotated[int, Field(...,gt = 0,description="Mortgage")]
     Securities.Account: Annotated[Literal["YES","NO"], Field(..., description="Securities_Account")]
-    CD.Account: Annotated[Literal["YES","NO"], Field(..., description="CD_Account")]
+    CD_Account: Annotated[Literal["YES","NO"], Field(..., description="CD_Account")]
     Online: Annotated[Literal["YES","NO"], Field(..., description="Online")]
     CreditCard: Annotated[Literal["YES","NO"], Field(..., description="CreditCard")]
 
